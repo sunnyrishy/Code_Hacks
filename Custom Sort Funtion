@@ -1,0 +1,13 @@
+If we have a pair of elements and we want to sort on the basis of first or second element and if so ever they match then we will sort based on the another value.
+
+(here, we will sort based on first value and if they match we will sort based on the second value)
+here second is the index value so they will all be distinct.
+
+
+
+sort(arr.begin(), arr.end(), [](const pair<ll,ll>& a, const pair<ll,ll>& b){
+            if(a.first != b.first){
+                return a.first > b.first;
+            }
+            else return a.second < b.second;
+        });
