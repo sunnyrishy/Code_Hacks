@@ -1,2 +1,13 @@
 transform(s.begin(), s.end(), s.begin(), ::tolower);
 transform(s.begin(), s.end(), s.begin(), ::toupper);
+
+
+Check if a character is an uppercase or an lowercase ; 
+
+for (char c : s) {
+        if (isupper(c)) {
+            cout << c << " is uppercase\n";
+        } else if (islower(c)) {
+            cout << c << " is lowercase\n";
+        }
+    }
